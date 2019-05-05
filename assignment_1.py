@@ -1,21 +1,31 @@
 
-aString=input("If you use SI to input your weith and hight please write yes else no")
-a=format(aString)
+aString=input("If you use SI to input your weith and hight please write 1 else 2")
+a=int(aString)
 print(a)
-if a!=yes:
 
-wString=input("enter your weith in kg")
-hString=input("enter your hight in cm")
-w=float(wString)
-h=float(hString)
+if a==1:
 
-bmi=w/h**2
+   wString=input("enter your weith in kg")
+   hString=input("enter your hight in m")
+   w=float(wString)
+   h=float(hString)
+   bmi=w/(h**2)
+elif a==2:
+    wString = input("enter your weith in lb")
+    hString = input("enter your hight in in")
+    w = float(wString)
+    h = float(hString)
+    bmi = (w / h ** 2) * 703
+
+
 if bmi<18.5:
     print("underweith")
 elif 18.5<bmi<25:
-    print(Normal)
+    print("Normal")
 elif 25<bmi<30:
     print("Overwieth")
-else:print("Obesity")
+else:
+    print("Obesity")
+
 
 
