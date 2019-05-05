@@ -1,5 +1,5 @@
 
-aString=input("If you use SI to input your weith and hight please write 1 else 2")
+aString=input("If you use metric units to input your weith and hight please write 1 if you use imperial unics please write 2")
 a=int(aString)
 print(a)
 
